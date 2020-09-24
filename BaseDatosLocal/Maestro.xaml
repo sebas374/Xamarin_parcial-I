@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BaseDatosLocal.Maestro"
+             Title="Maestro"
+             BackgroundColor="#1b2b32">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="imge4.jpg"/>
+            <Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="1" Padding="32,30">
+
+
+                        <Button Text="Aten Clientes" 
+                        Clicked="IrPagina1"
+                    BackgroundColor="#FF2597F5"
+                    BorderRadius="20"
+                    BorderColor="Black"
+                    TextColor="White"/>
+            
+            <Button Text="Productos"
+                    Clicked="IrPagina2"
+                    BackgroundColor="#FF2597F5"
+                    BorderRadius="20"
+                    BorderColor="Black"
+                    TextColor="White"/>
+                        
+                    <Button Text="Informacion"
+                    Clicked="IrPagina3"
+                    BackgroundColor="#FF2597F5"
+                    BorderRadius="20"
+                    BorderColor="Black"
+                    TextColor="White"/>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </StackLayout>
+                    
+    </ContentPage.Content>
+</ContentPage>
